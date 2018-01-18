@@ -1,10 +1,2 @@
-.idea/workspace.xml
-.idea/libraries
-.idea/misc.xml
-.idea/dataSources
-.idea/dataSources.xml
-.idea/artifacts
-.idea/sonarlint
-.idea/uiDesigner.xml
 /build
 *.iml
