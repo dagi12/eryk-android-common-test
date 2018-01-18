@@ -1,0 +1,54 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'realm-android'
+
+android {
+    compileSdkVersion 26
+
+    defaultConfig {
+        minSdkVersion 19
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+
+    buildTypes {
+
+    }
+
+}
+
+dependencies {
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
+    implementation project(":eryk-android-common")
+
+    // di
+    kapt 'com.google.dagger:dagger-compiler:2.14.1'
+    implementation 'com.google.dagger:dagger:2.14.1'
+
+    // test
+    implementation 'junit:junit:4.12'
+    implementation "org.robolectric:robolectric:3.3.2"
+    implementation "org.mockito:mockito-core:1.10.19"
+    implementation 'org.robolectric:shadows-support-v4:3.0'
+    implementation "org.robolectric:shadows-multidex:3.3.2"
+    implementation "org.powermock:powermock-module-junit4:1.6.5"
+    implementation "org.powermock:powermock-module-junit4-rule:1.6.5"
+    implementation "org.powermock:powermock-api-mockito:1.6.5"
+    implementation "org.powermock:powermock-classloading-xstream:1.6.5"
+
+    // espresso
+    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+    androidTestImplementation 'com.github.fabioCollini:DaggerMock:0.8.2'
+    kaptAndroidTest 'com.google.dagger:dagger-compiler:2.14.1'
+//    androidTestImplementation "com.linkedin.dexmaker:dexmaker-mockito:2.2.0"
+//    androidTestImplementation 'com.android.support:support-annotations:27.0.2'
+
+}
