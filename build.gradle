@@ -11,6 +11,9 @@ buildscript {
 }
 
 android {
+    publishNonDefault true
+    defaultPublishConfig "debug"
+
     compileSdkVersion 27
     buildToolsVersion "27.0.2"
 
@@ -38,13 +41,20 @@ dependencies {
 
     // test
     compile 'junit:junit:4.12'
+    //noinspection GradleDependency
     compile "org.robolectric:robolectric:3.3.2"
+    //noinspection GradleDependency
     compile "org.mockito:mockito-core:1.10.19"
+    //noinspection GradleDependency
     compile 'org.robolectric:shadows-support-v4:3.0'
+    //noinspection GradleDependency
     compile "org.robolectric:shadows-multidex:3.3.2"
+    //noinspection GradleDependency
     compile "org.powermock:powermock-module-junit4:1.6.5"
+    //noinspection GradleDependency
     compile "org.powermock:powermock-module-junit4-rule:1.6.5"
     compile "org.powermock:powermock-api-mockito:1.6.5"
+    //noinspection GradleDependency
     compile "org.powermock:powermock-classloading-xstream:1.6.5"
 
     // espresso
