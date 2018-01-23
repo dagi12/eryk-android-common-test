@@ -42,20 +42,20 @@ dependencies {
     // test
     compile 'junit:junit:4.12'
     //noinspection GradleDependency
-    compile "org.robolectric:robolectric:3.3.2"
+    compile "org.robolectric:robolectric:3.6.1"
     //noinspection GradleDependency
     compile "org.mockito:mockito-core:1.10.19"
     //noinspection GradleDependency
-    compile 'org.robolectric:shadows-support-v4:3.0'
+    compile 'org.robolectric:shadows-support-v4:3.3.2'
     //noinspection GradleDependency
-    compile "org.robolectric:shadows-multidex:3.3.2"
+    compile "org.robolectric:shadows-multidex:3.6.1"
     //noinspection GradleDependency
-    compile "org.powermock:powermock-module-junit4:1.6.5"
+    compile "org.powermock:powermock-module-junit4:1.6.6"
     //noinspection GradleDependency
-    compile "org.powermock:powermock-module-junit4-rule:1.6.5"
-    compile "org.powermock:powermock-api-mockito:1.6.5"
+    compile "org.powermock:powermock-module-junit4-rule:1.6.6"
+    compile "org.powermock:powermock-api-mockito:1.6.6"
     //noinspection GradleDependency
-    compile "org.powermock:powermock-classloading-xstream:1.6.5"
+    compile "org.powermock:powermock-classloading-xstream:1.6.6"
 
     // espresso
 //    androidTestImplementation 'com.android.support.test:runner:1.0.1'
